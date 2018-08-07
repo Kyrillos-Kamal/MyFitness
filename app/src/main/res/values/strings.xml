@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyFitness</string>
+    <string name="welcome_to_your_fitness_calculator">Welcome To Your Fitness Calculator</string>
+    <string name="body_fat_calculator">Body Fat Calculator</string>
+    <string name="calories_calculator">Calories Calculator</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="which_ender_you_are">Choose Your Gender</string>
+</resources>

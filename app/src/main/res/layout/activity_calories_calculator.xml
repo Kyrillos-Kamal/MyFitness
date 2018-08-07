@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitnessback"
+    tools:context=".CaloriesCalculatorActivity">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/which_ender_you_are"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="141dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/male"
+            android:text="@string/male"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:cornerRadius="4dp"
+            app:fButtonColor="#F2DD2A"
+            app:shadowColor="@android:color/black"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="167dp" />
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/female"
+            android:text="@string/female"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:cornerRadius="4dp"
+            app:fButtonColor="#F2DD2A"
+            app:shadowColor="@android:color/black"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="167dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

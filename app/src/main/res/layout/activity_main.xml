@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitnessback"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnBodyFat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="211dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text="@string/body_fat_calculator"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:cornerRadius="4dp"
+        app:fButtonColor="#F2DD2A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp" />
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnCaloriesCalculator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="@string/calories_calculator"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:cornerRadius="4dp"
+        app:fButtonColor="#F2DD2A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBodyFat"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp" />
+
+
+</android.support.constraint.ConstraintLayout>
